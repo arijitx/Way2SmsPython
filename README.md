@@ -18,7 +18,7 @@
 Python scripts to send Way2SMS messages from your way2sms account 
 #Usage:
 
-    import Way2sms as s
+    import Way2smsPy as s
     s.login("9874368232","arijit94")
     s.send_sms("8017087451","helloWorld")
     'success'

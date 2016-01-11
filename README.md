@@ -15,7 +15,7 @@
             |___/                                          
 
                                          
-Python scripts to send Wayt to SMS messages from your way2sms account 
+Python scripts to send Way2SMS messages from your way2sms account 
 #Usage:
 
     import Way2sms as s

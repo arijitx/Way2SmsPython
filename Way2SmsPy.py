@@ -33,7 +33,7 @@ def send_sms(number,message):
 	br.open(url)
 	res=br.response().read()
 	if br.response().code == 200 :
-		return "success"
+		print "success"
 	else:
 		print "fail"
 def usage():

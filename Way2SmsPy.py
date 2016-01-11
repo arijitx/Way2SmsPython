@@ -4,7 +4,7 @@
 
 from mechanize import Browser
 from bs4 import BeautifulSoup as BS
-
+import urllib2
 
 token="AUTO_GENERATED_TOKEN"
 username="USERNAME"
@@ -24,7 +24,7 @@ def login(uName,pwd):
 
 def send_sms(number,message):
 	mob=number
-	msg=message
+	msg=urllib2.quote(message)
 	soup = BS(br.response().read(),"lxml")
 	token=soup.find("input", {"name": "Token"})
 	#print token.get('value')
